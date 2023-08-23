@@ -16,10 +16,6 @@ contributes:
       header-includes: |
         %Graphics should all go in the figs/ directory
         \graphicspath{{figs/}}
-      template-partials:
-        # Add here the partials your format is using
-        - "partials/title.tex"
-        - "partials/_authors.tex"
       format-resources:
         - hdsr.cls
     html:
