@@ -106,7 +106,7 @@
 \setlength{\fboxrule}{0pt}%
   \node[anchor=north, yshift=-10pt, line width=0pt] at (current page.north) {\fbox{\parbox{\dimexpr\textwidth-\fboxsep-\fboxrule\relax}{  
   
-        \includegraphics[scale=0.1]{logo.png} \\
+        \includegraphics[scale=0.5]{logo.png} \\
         Volume #1 Issue #2 \\
         DOI: #3 \\ 
         ISSN: 2644-2353}}};
