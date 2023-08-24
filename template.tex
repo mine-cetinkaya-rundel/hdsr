@@ -145,6 +145,14 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 \makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
 \makeatother
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
@@ -173,9 +181,11 @@ Author}
 \begin{abstract}
 The abstract should be no more than 250 words.
 \end{abstract}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, frame hidden, boxrule=0pt, enhanced, sharp corners, borderline west={3pt}{0pt}{shadecolor}, interior hidden]}{\end{tcolorbox}}\fi
+
 \hypertarget{media-summary}{%
-\subsection*{Media Summary}\label{media-summary}}
-\addcontentsline{toc}{subsection}{Media Summary}
+\section*{Media Summary}\label{media-summary}}
+\addcontentsline{toc}{section}{Media Summary}
 
 The Media Summary should be written in plain language to highlight the
 key messages of the article, in ways that can be understood by the
@@ -185,7 +195,7 @@ communications. It should not exceed 400 words, and more succinct, the
 better.
 
 \hypertarget{sec-sec1}{%
-\subsection{An Informative Section Title}\label{sec-sec1}}
+\section{An Informative Section Title}\label{sec-sec1}}
 
 Because we use section titles in a pull-down menu for the online version
 as signposts, please use as specific and informative titles as possible.
@@ -207,14 +217,14 @@ was inspiring -- I never thought about that!'\,'
 \]
 
 \hypertarget{subsection}{%
-\subsubsection{Subsection}\label{subsection}}
+\subsection{Subsection}\label{subsection}}
 
 Building upon previous work by Murray (2020), dolor sit amet,
 consectetur adipiscing elit. Pellentesque id massa vulputate, tristique
 mi id, imperdiet mi.
 
 \hypertarget{section-title}{%
-\subsection{Section title}\label{section-title}}
+\section{Section title}\label{section-title}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id
 massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus
@@ -224,7 +234,7 @@ accumsan diam vitae nibh fermentum, nec facilisis leo pulvinar. Ut
 condimentum nisl in orci euismod mattis. Fusce at mauris augue.
 
 \hypertarget{section-title-1}{%
-\subsection{Section title}\label{section-title-1}}
+\section{Section title}\label{section-title-1}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id
 massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus
@@ -250,14 +260,14 @@ nisl in orci euismod mattis. Fusce at mauris augue.
 \end{figure}
 
 \hypertarget{disclosure-statement}{%
-\subsubsection*{Disclosure Statement}\label{disclosure-statement}}
-\addcontentsline{toc}{subsubsection}{Disclosure Statement}
+\subsection*{Disclosure Statement}\label{disclosure-statement}}
+\addcontentsline{toc}{subsection}{Disclosure Statement}
 
 The authors have no conflicts of interest to declare.
 
 \hypertarget{acknowledgments}{%
-\subsubsection*{Acknowledgments}\label{acknowledgments}}
-\addcontentsline{toc}{subsubsection}{Acknowledgments}
+\subsection*{Acknowledgments}\label{acknowledgments}}
+\addcontentsline{toc}{subsection}{Acknowledgments}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id
 massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus
@@ -267,8 +277,8 @@ accumsan diam vitae nibh fermentum, nec facilisis leo pulvinar. Ut
 condimentum nisl in orci euismod mattis. Fusce at mauris augue.
 
 \hypertarget{contributions}{%
-\subsubsection*{Contributions}\label{contributions}}
-\addcontentsline{toc}{subsubsection}{Contributions}
+\subsection*{Contributions}\label{contributions}}
+\addcontentsline{toc}{subsection}{Contributions}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id
 massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus
@@ -278,7 +288,7 @@ accumsan diam vitae nibh fermentum, nec facilisis leo pulvinar. Ut
 condimentum nisl in orci euismod mattis. Fusce at mauris augue.
 
 \hypertarget{sec-appendix-customize-this-label}{%
-\subsection{Title}\label{sec-appendix-customize-this-label}}
+\section{Title}\label{sec-appendix-customize-this-label}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id
 massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus

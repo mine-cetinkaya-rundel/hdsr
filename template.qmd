@@ -23,14 +23,14 @@ abstract: |
   The abstract should be no more than 250 words.
 keywords: [up, to, six, keywords]
 reference-section-title: References
-bibliography: references.bib  
+bibliography: references.bib 
 ---
 
-## Media Summary {.unnumbered}
+# Media Summary {.unnumbered}
 
 The Media Summary should be written in plain language to highlight the key messages of the article, in ways that can be understood by the general public and cited by the media directly and accurately. It therefore should avoid technical terms or language designed for academic communications. It should not exceed 400 words, and more succinct, the better.
 
-## An Informative Section Title {#sec-sec1}
+# An Informative Section Title {#sec-sec1}
 
 Because we use section titles in a pull-down menu for the online version as signposts, please use as specific and informative titles as possible. Avoid generic section titles such as `methods,''`data,'' and `results''. Such titles are common in certain technical journals, but they do not work well for HDSR, which aims to publish`everything data science and data science for everyone". Try to use titles that will make readers (and you!) think that `Hmmm, that sounds interesting'' or`Hmmm, that's unexpected and I better to take a look.'' The same goes with the article title, and indeed the entire article. Considering you are not writing a technical article, but rather telling a data science story with layered plots, an enticing flow, and a memorable punch line. That is, an article you want to read, and will walk away feeling \`\`Wow, that was inspiring -- I never thought about that!''
 
@@ -38,17 +38,17 @@ $$
     i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}\frac{\partial^2 \Psi}{\partial x^2} + V \Psi
 $$
 
-### Subsection
+## Subsection
 
 Building upon previous work by @2020.03.27.20043752, dolor sit amet, consectetur adipiscing elit. Pellentesque id massa vulputate, tristique mi id, imperdiet mi.
 
-## Section title
+# Section title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus mollis sagittis. Sed imperdiet nibh id eros malesuada, at fermentum urna mollis. Sed id elit eu arcu varius tempor tincidunt in orci. Nullam accumsan diam vitae nibh fermentum, nec facilisis leo pulvinar. Ut condimentum nisl in orci euismod mattis. Fusce at mauris augue.
 
 <!--# Need to add: % These commands need to appear at the point where you want % the first page to end. \restoregeometry \newgeometry{bottom=0.5in} -->
 
-## Section title
+# Section title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus mollis sagittis. Sed imperdiet nibh id eros malesuada, at fermentum urna mollis.
 
@@ -62,19 +62,19 @@ Sed id elit eu arcu varius tempor tincidunt in orci. Nullam accumsan diam vitae 
 
 ![This is an example figure.](figs/iris_pairs.png){#fig-my-label}
 
-### Disclosure Statement {.unnumbered}
+## Disclosure Statement {.unnumbered}
 
 The authors have no conflicts of interest to declare.
 
-### Acknowledgments {.unnumbered}
+## Acknowledgments {.unnumbered}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus mollis sagittis. Sed imperdiet nibh id eros malesuada, at fermentum urna mollis. Sed id elit eu arcu varius tempor tincidunt in orci. Nullam accumsan diam vitae nibh fermentum, nec facilisis leo pulvinar. Ut condimentum nisl in orci euismod mattis. Fusce at mauris augue.
 
-### Contributions {.unnumbered}
+## Contributions {.unnumbered}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus mollis sagittis. Sed imperdiet nibh id eros malesuada, at fermentum urna mollis. Sed id elit eu arcu varius tempor tincidunt in orci. Nullam accumsan diam vitae nibh fermentum, nec facilisis leo pulvinar. Ut condimentum nisl in orci euismod mattis. Fusce at mauris augue.
 
-## Title {#sec-appendix-customize-this-label .appendix}
+# Title {#sec-appendix-customize-this-label .appendix}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id massa vulputate, tristique mi id, imperdiet mi. Mauris id ante ac lacus mollis sagittis. Sed imperdiet nibh id eros malesuada, at fermentum urna mollis. Sed id elit eu arcu varius tempor tincidunt in orci.
 
