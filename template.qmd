@@ -13,9 +13,7 @@ author:
   - name: Second Author
     affiliations:
       - Affiliation Two
-  - name: Second Author
-    affiliations:
-      - Affiliation Two
+      - Affiliation One
   - name: Third Author
     affiliations:
       - Affiliation Three
