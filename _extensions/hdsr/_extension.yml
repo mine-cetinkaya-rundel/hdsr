@@ -18,6 +18,7 @@ contributes:
         \graphicspath{{figs/}}
       format-resources:
         - hdsr.cls
+        - logo.png
     html:
       # define default configuration for the html version of your format
       number-sections: true
