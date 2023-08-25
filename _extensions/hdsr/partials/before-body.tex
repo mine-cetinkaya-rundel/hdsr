@@ -6,15 +6,55 @@ $-- %%%%%%%%%%%%%%%%
 $if(has-frontmatter)$
 \frontmatter
 $endif$
+
+% \graphicspath{{figs/}}
+
+\newgeometry{bottom=1.5in}
+
+
+\volumeheader%
+{$if(volume)$$volume$$else$0$endif$}%
+{$if(issue)$$issue$$else$0$endif$}%
+{$if(doi)$$doi$$else$00.000$endif$}
+
 $if(title)$
 $if(beamer)$
 \frame{\titlepage}
 $else$
 \maketitle
 $endif$
+$endif$
+
+% Start page numbering on second page. Must appear *after* \maketitle
+\thispagestyle{empty}
+
+ % % Authors and Affiliations
+ %  \begin{tabular}{cc}
+ %    First Author\upstairs{\affilone,*}, Second Author\upstairs{\affilone}, Third Author\upstairs{\affilthree}
+ %   \\[0.25ex]
+ %   {\small \upstairs{\affilone} Affiliation One} \\
+ %   {\small \upstairs{\affiltwo} Affiliation Two} \\
+ %   {\small \upstairs{\affilthree} Affiliation Three} \\
+ %  \end{tabular}
+  
+ % % Replace with corresponding author email address
+ % \emails{
+ %   \upstairs{*}correspondingauthor@example.edu 
+ %   }
+ % \vspace*{0.4in}
+
 $if(abstract)$
 \begin{abstract}
 $abstract$
 \end{abstract}
 $endif$
-$endif$
+
+\vspace*{0.15in}
+
+\hspace{10pt}
+  \small	
+  \textbf{\textit{Keywords: }} $for(keywords)$$keywords$$sep$, $endfor$
+
+\copyrightnotice
+
+% Media summary should come next as an unnumbered section
