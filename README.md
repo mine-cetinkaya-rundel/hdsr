@@ -1,11 +1,13 @@
-# Article Format Template (AFT)
+# HDSR 
 
-This is a Quarto template that assists you in creating a manuscript for 
-the Harvard Data Science Review.
+This is a Quarto template will help you create manuscripts for 
+the Harvard Data Science Review. It is based on the *HDSR* Overleaf template.
+For more information see the *HDSR*
+[Full Manuscript Guidelines](https://hdsr.mitpress.mit.edu/pub/guidelines-author/release/1).
 
 ## Creating a New Article
 
-You can use this as a template to create an article for an AFT journal. To do this, use the following command:
+You can use this as a template to create an article for the *HDSR* journal. To do this, use the following command:
 
 ```bash
 quarto use template quarto-journals/hdsr
@@ -38,8 +40,8 @@ format:
     keep-tex: true    
 ```
 
-You can view a preview of the rendered template at <https://quarto-journals.github.io/hdsr/>.
+<!-- You can view a preview of the rendered template at <https://quarto-journals.github.io/hdsr/>. -->
 
 ## Format Options
 
-This format does not have specific format option. Include documentation of such option otherwise. See <https://github.com/quarto-journals/elsevier#format-options> for an example.
+TBD
