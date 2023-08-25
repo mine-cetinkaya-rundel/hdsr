@@ -4,6 +4,9 @@ format:
   hdsr-pdf:
     keep-tex: true  
   hdsr-html: default
+volume: 1
+issue: 2
+doi: "34.567"
 author:
   - name: First Author
     affiliations:

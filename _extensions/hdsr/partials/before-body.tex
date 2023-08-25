@@ -12,7 +12,10 @@ $endif$
 \newgeometry{bottom=1.5in}
 
 
-\volumeheader{0}{0}{00.000}
+\volumeheader%
+{$if(volume)$$volume$$else$0$endif$}%
+{$if(issue)$$issue$$else$0$endif$}%
+{$if(doi)$$doi$$else$00.000$endif$}
 
 $if(title)$
 $if(beamer)$
